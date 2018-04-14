@@ -72,3 +72,15 @@ def remove_pet_by_name(pet_shop, name)
   end
   nil
 end
+
+def add_pet_to_stock(pet_shop, new_pet)
+  pet_shop[:pets].push(new_pet)
+end
+
+def customer_cash(customer)
+  customer[:cash]
+end
+
+def remove_customer_cash(customer, amount)
+  customer[:cash] -= amount
+end
